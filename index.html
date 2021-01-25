@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Late Fee Calculator</title>
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+    <style>
+        .output {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Library Late Fee Calculator</h1>
+
+<label for="numBooks"># of Books:</label>
+<input type="number" id="numBooks">
+<br> <br>
+<label for="lateDayBooks">Days Late:</label>
+<input type="number" id="lateDayBooks">
+<br> <br>
+<label for="numDVDs"># of DVDs:</label>
+<input type="number" id="numDVDs">
+<br> <br>
+<label for="lateDayDVDs">Days Late:</label>
+<input type="number" id="lateDayDVDs">
+<br> <br>
+<p class="output">Your late fees total $<span id="costLibOutput"></span></p>
+
+<button id="LibraryButton">Calculate Library Fees</button>
