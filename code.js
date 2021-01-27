@@ -34,8 +34,10 @@ $(document).ready(
             // Add bookFeeTotal + dvdFeeTotal to get grandFeeTotal
             let grandFeeTotal = bookFeeTotal + dvdFeeTotal;
 
+            // Output calculated fixed total
             $("#costLibOutput").text(grandFeeTotal.toFixed(2));
 
+            // show output once button is pressed
             $(".output").show();
         }
     }
